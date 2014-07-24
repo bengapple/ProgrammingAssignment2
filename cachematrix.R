@@ -1,3 +1,8 @@
+
+## makeCahceMatrix takes an input of numric data a row and a col quantity stores 
+##tha matrix in the function environmmnet and thne uses the <<- to store ththe
+##matrix in higher environment
+
 makeCacheMatrix <- function(x = matrix(),...) {
         m <- matrix()
         set <- function(y) {
@@ -13,6 +18,9 @@ makeCacheMatrix <- function(x = matrix(),...) {
 }
 
 
+## cahceSolve takes the matrix produced in the makeCacheMatrix function that
+##was stored in the non-function enviuronment the uses the solve() function 
+##to inver the matrix
 
 cacheSolve <- function(x, ...) {
         m <- x$getsolve()
